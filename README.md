@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://rookieprogrammersachin.github.io/FrontendMentor-ProductPreviewCard/](https://rookieprogrammersachin.github.io/FrontendMentor-ProductPreviewCard/
+- Live Site URL: [https://rookieprogrammersachin.github.io/FrontendMentor-ProductPreviewCard/](https://rookieprogrammersachin.github.io/FrontendMentor-ProductPreviewCard/)
 
 ## My process
 
