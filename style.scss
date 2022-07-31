@@ -1,0 +1,184 @@
+$prmDarkCyan: hsl(158, 36%, 37%);
+$prmCream: hsl(30, 38%, 92%);
+$veryDarkBlue: hsl(212, 21%, 14%);
+$darkGrayishBlue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+$prmDarkCyan-hover: hsl(156, 42%, 18%);
+
+$frauncesFont: 'Fraunces', serif;
+$outfitFont: 'Outfit', sans-serif;
+$montserratFont: 'Montserrat', sans-serif;
+
+$pFontsize: 14px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $prmCream;
+}
+
+.container{
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-flex{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: auto;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 1rem;
+}
+
+.product {
+    width: 300px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    filter: brightness(90%) contrast(110%);
+    // filter: saturate(110%);
+}
+
+.product-mobile{
+    display:none;
+}
+
+.info{
+    padding: 2rem;
+}
+
+h3{
+    font-family: $montserratFont;
+    font-weight: 500;
+    color: $darkGrayishBlue;
+    font-size: 13px;
+    padding-bottom: 1.2rem;
+}
+
+h1{
+    font-family: $frauncesFont;
+    font-weight: 700;
+    color: $veryDarkBlue;
+    padding-bottom: 0.8em;
+    line-height: 1em;
+}
+
+.about{
+    font-family: $montserratFont;
+    font-weight: 500;
+    color: $darkGrayishBlue;
+    font-size: $pFontsize;
+    padding-bottom: 2rem;
+    line-height: 1.6em;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.curPrice{
+    font-family: $frauncesFont;
+    font-weight: 700;
+    font-size: 32px;
+    color: $prmDarkCyan;
+    font-style: bold;
+}
+
+.oldPrice{
+    font-family: $montserratFont;
+    font-weight: 500;
+    font-size: $pFontsize;
+    color: $darkGrayishBlue;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.addToCart{
+    text-align: center;
+    width: 100%;
+    padding: 6%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: $prmDarkCyan;
+    color: $white;
+    font-family: $montserratFont;
+    font-weight: 500;
+    font-size: $pFontsize;
+    margin-top: 2em;
+    transition-duration: 0s;
+}
+
+.addToCart:hover{
+    transition-duration: 0.5s;
+    background: $prmDarkCyan-hover;
+    cursor: pointer;
+}
+.addToCart:active{
+    transition-duration: 0.2s;
+    background: hsl(158, 50%, 5%);
+    cursor: pointer;
+}
+
+
+.cartLogo{
+    margin: 0 6px;
+    transform: translateX(-5px) translateY(3px);
+}
+
+.attribution { font-family: 'Calibri'; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 650px){
+    .product{
+        display: none;
+    }
+    .product-mobile{
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        filter: brightness(90%) contrast(110%);
+    }
+    .card-flex{
+        flex-direction: column;
+        width: 90%;
+        // height: 90%;
+        height: auto;
+    }
+    .info{
+        padding: 1.5rem;
+    }
+    h3{
+        padding-bottom: 1rem;
+    }
+    h1{
+        font-size: 1.9rem;
+        padding-bottom: 1rem;
+    }
+    .about{
+        padding-bottom: 1rem;
+    }
+    .oldPrice{
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    .addToCart{
+        margin-top: 1rem;
+        padding: 5%;
+        border-radius: 8px;
+    }
+}
